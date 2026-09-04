@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dub — Say the Line</title>
+<meta name="description" content="Dub a scene: pick a pack, record your lines over the video, pass the mic. Get Dub for iPhone and Mac.">
+<style>
+  :root {
+    --surface: #ECEBE8;
+    --ink: #212121;
+    --ink-2: rgba(33, 33, 33, 0.62);
+    --card: #2A2A2D;
+    --on-card: rgba(255, 255, 255, 0.92);
+    --on-card-2: rgba(255, 255, 255, 0.6);
+    --amber: #E47B1A;
+    --rule: rgba(33, 33, 33, 0.25);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --surface: #191A1B;
+      --ink: #E0E0E0;
+      --ink-2: rgba(224, 224, 224, 0.6);
+      --rule: rgba(224, 224, 224, 0.24);
+    }
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--surface);
+    color: var(--ink);
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    min-height: 100vh;
+    display: flex; align-items: center; justify-content: center;
+    padding: 40px 20px;
+  }
+  main { max-width: 460px; width: 100%; text-align: center; }
+  .mono { font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; }
+  .eyebrow {
+    font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    font-size: 12px; letter-spacing: 4px; text-transform: uppercase;
+    color: var(--amber);
+  }
+  .eyebrow::before { content: "⌐ "; }
+  .eyebrow::after  { content: " ¬"; }
+  h1 {
+    font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    font-size: clamp(56px, 18vw, 88px); line-height: 1; letter-spacing: 2px;
+    margin: 14px 0 6px;
+  }
+  h1 .amber { color: var(--amber); }
+  .tag { color: var(--ink-2); font-size: 17px; }
+  .card {
+    background: var(--card); color: var(--on-card);
+    border-radius: 10px; padding: 28px 28px 24px; margin: 32px auto 0;
+  }
+  .qr-tile {
+    background: #ECEBE8; border-radius: 8px;
+    width: 208px; height: 208px; padding: 16px;
+    margin: 0 auto;
+  }
+  .scan {
+    font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    font-size: 11px; letter-spacing: 2.5px; text-transform: uppercase;
+    color: var(--on-card-2); margin-top: 14px;
+  }
+  .cta {
+    display: block; margin: 18px auto 0; padding: 14px 10px;
+    background: var(--amber); color: #1A1208; text-decoration: none;
+    font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    font-size: 15px; letter-spacing: 2px; text-transform: uppercase;
+    border-radius: 4px; font-weight: 600;
+  }
+  .cta:active { transform: translateY(1px); }
+  .soon { margin-top: 10px; font-size: 13px; color: var(--on-card-2); }
+  .how {
+    margin-top: 30px; color: var(--ink-2); font-size: 14px; line-height: 1.7;
+  }
+  .how b { color: var(--ink); font-weight: 600; }
+  footer { margin-top: 34px; padding-top: 16px; border-top: 1px solid var(--rule); }
+  footer p { font-size: 12.5px; color: var(--ink-2); }
+  footer a { color: var(--ink-2); }
+</style>
+</head>
+<body>
+<main>
+  <div class="eyebrow">Say the Line</div>
+  <h1>DU<span class="amber">B</span></h1>
+  <p class="tag">Dub a scene: pick a pack, say the lines, pass the mic.</p>
+
+  <div class="card">
+    <!-- Placeholder QR + link: both currently point at google.com. Swap the
+         href AND regenerate the QR for the real App Store URL at launch. -->
+    <a href="https://www.google.com" aria-label="Download Dub">
+      <div class="qr-tile">
+        <svg viewBox="0 0 174 174" width="100%" height="100%" role="img" aria-label="QR code to download Dub"><path transform="scale(6)" fill="none" stroke="#191A1B" d="M2 2.5h7m5 0h3m3 0h7m-25 1h1m5 0h1m1 0h2m1 0h2m1 0h1m3 0h1m5 0h1m-25 1h1m1 0h3m1 0h1m1 0h1m2 0h2m1 0h3m1 0h1m1 0h3m1 0h1m-25 1h1m1 0h3m1 0h1m1 0h1m2 0h1m1 0h4m1 0h1m1 0h3m1 0h1m-25 1h1m1 0h3m1 0h1m2 0h1m1 0h3m2 0h1m1 0h1m1 0h3m1 0h1m-25 1h1m5 0h1m5 0h3m1 0h1m1 0h1m5 0h1m-25 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-17 1h3m1 0h1m2 0h2m-17 1h1m5 0h1m1 0h1m2 0h5m1 0h2m2 0h3m-24 1h1m2 0h2m2 0h2m3 0h1m1 0h2m1 0h1m1 0h5m-22 1h1m2 0h5m1 0h1m1 0h1m1 0h7m1 0h2m-23 1h4m3 0h1m2 0h1m1 0h4m1 0h1m1 0h1m2 0h1m-25 1h1m2 0h4m1 0h2m2 0h1m3 0h1m1 0h1m5 0h1m-25 1h4m1 0h1m1 0h4m2 0h1m1 0h3m1 0h1m3 0h1m-24 1h1m4 0h2m1 0h2m1 0h11m1 0h2m-25 1h1m1 0h4m1 0h2m1 0h2m3 0h1m1 0h1m1 0h1m1 0h2m1 0h1m-25 1h1m3 0h1m1 0h3m1 0h2m1 0h2m1 0h5m1 0h1m-15 1h1m1 0h1m1 0h2m2 0h1m3 0h1m-21 1h7m3 0h2m1 0h1m2 0h1m1 0h1m1 0h1m3 0h1m-25 1h1m5 0h1m3 0h1m1 0h1m1 0h3m3 0h1m-21 1h1m1 0h3m1 0h1m2 0h2m1 0h1m2 0h6m1 0h3m-25 1h1m1 0h3m1 0h1m2 0h1m4 0h2m2 0h1m4 0h2m-25 1h1m1 0h3m1 0h1m2 0h4m8 0h2m1 0h1m-25 1h1m5 0h1m2 0h1m1 0h1m4 0h2m1 0h2m3 0h1m-25 1h7m1 0h1m3 0h3m1 0h2m3 0h1m2 0h1"/></svg>
+      </div>
+    </a>
+    <p class="scan">Scan to download</p>
+    <a class="cta" href="https://www.google.com">Get the App</a>
+    <p class="soon">iPhone &amp; Mac</p>
+  </div>
+
+  <p class="how">
+    <b>01</b> grab a pack &nbsp;·&nbsp; <b>02</b> record over the video, one line at a time
+    &nbsp;·&nbsp; <b>03</b> invite friends — everyone voices a character
+  </p>
+
+  <footer>
+    <p><a href="/DubHub/policy/">Community guidelines · copyright &amp; takedowns · privacy</a></p>
+    <p style="margin-top:6px">Packs are user-published and reviewed before they reach the catalog.</p>
+  </footer>
+</main>
+</body>
+</html>
